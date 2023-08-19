@@ -1,28 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sumer sale</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
-<body class="max-w-[1440px] mx-auto">
-    <header class="h-screen bg-[#F9F6E2] flex items-center justify-center px-28 "> 
-        <div class="flex-1 text-center">
-            <h3 class="text-3xl mb-8">---SALE FEVER---</h3>
-            <h1 class="text-5xl font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
-            <p class="text-xl mt-14">Use Promo Code <span class="text-white bg-[#E527B2] px-5 py-1.5 mx-3 rounded-md ">SELL200</span></p>         
-        </div>
-        <div class="flex-1">
-            <img class="w-[100%]" src="./images/Summer 1.png" alt="">
-        </div>
+    <script
+      src="https://kit.fontawesome.com/71bc8e0eff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="max-w-[1440px] mx-auto">
+    <header
+      class="h-screen bg-[#F9F6E2] flex items-center justify-center px-28"
+    >
+      <div class="flex-1 text-center">
+        <h3 class="text-3xl mb-8">---SALE FEVER---</h3>
+        <h1 class="text-5xl font-bold">
+          Purchase TK 200 or <br />
+          above & get <span class="text-[#E527B2]">20% off</span>
+        </h1>
+        <p class="text-xl mt-14">
+          Use Promo Code
+          <span class="text-white bg-[#E527B2] px-5 py-1.5 mx-3 rounded-md"
+            >SELL200</span
+          >
+        </p>
+      </div>
+      <div class="flex-1">
+        <img class="w-[100%]" src="./images/Summer 1.png" alt="" />
+      </div>
     </header>
-    <main>
 
+    <main class="bg-[#F8F8F8]">
+      <section class="px-28 py-28 flex">
+        <div class="flex-1">
+          <!--========== Kitchenware cards================ -->
+          <div class="mb-20">
+            <h2 class="text-3xl font-semibold my-5">Kitchenware</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod1.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">K. Accessories</h4>
+                <p class="text-[#11111180] text-lg">39.00 TK</p>
+              </div>
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod2.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">K. Accessories</h4>
+                <p class="text-[#11111180] text-lg">25.00 TK</p>
+              </div>
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod3.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">Home Cooker</h4>
+                <p class="text-[#11111180] text-lg">49.00TK</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- =================Sportswear================ -->
+          <div class="mb-20">
+            <h2 class="text-3xl font-semibold my-5">Sportswear</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod4.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">Sports Back Cap</h4>
+                <p class="text-[#11111180] text-lg">49.00 TK</p>
+              </div>
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod5.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">K. Accessories</h4>
+                <p class="text-[#11111180] text-lg">69.00 TK</p>
+              </div>
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod6.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">Sports cates</h4>
+                <p class="text-[#11111180] text-lg">159.00 TK</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- =============Furniture ===============-->
+          <div class="mb-20">
+            <h2 class="text-3xl font-semibold my-5">Kitchenware</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod7.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">Single Relax Chair</h4>
+                <p class="text-[#11111180] text-lg">185.00 TK</p>
+              </div>
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod8.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">Children play</h4>
+                <p class="text-[#11111180] text-lg">299.00 TK</p>
+              </div>
+              <div
+                onclick="handleClick(this)"
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+              >
+                <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
+                  <img class="mx-auto" src="./images/prod9.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                </div>
+                <h4 class="text-lg font-medium">Flexible Sofa</h4>
+                <p class="text-[#11111180] text-lg">339.00 TK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-72 mt-[76px] ms-5">
+          <div class="bg-white p-4 rounded-lg">
+            <p class="text-xl font-medium">Have coupon?</p>
+            <div class="relative w-full my-3">
+              <input
+                id="coupon-input"
+                class="border-[1px] rounded-md py-2 px-2 "
+                placeholder="Coupon code"
+                type="text"
+              />
+              <button class="bg-[#E527B2] px-4 py-[9px] rounded-r-md text-white absolute right-0 top-0 transition-all duration-300 active:scale-[0.95]">
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="main.js"></script>
     <script src="utilitys.js"></script>
-</body>
+  </body>
 </html>
