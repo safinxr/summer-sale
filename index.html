@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sumer sale</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/71bc8e0eff.js"
@@ -224,7 +229,9 @@
                 type="text"
               />
               <button
-                class="bg-[#E527B2] px-4 py-[9px] rounded-r-md text-white absolute right-0 top-0 transition-all duration-300 active:scale-[0.95]"
+              disabled
+                id="apply-btn"
+                class="bg-[#E527B2] px-4 py-[9px] rounded-r-md text-white absolute right-0 top-0"
               >
                 Apply
               </button>
@@ -234,19 +241,50 @@
           <!-- =============product lists================= -->.
           <div class="bg-white p-4 rounded-lg">
             <div>
-              <ol id="product-list" class="list-decimal ml-6 font-medium">
-                
-              </ol>
+              <ol id="product-list" class="list-decimal ml-6 font-medium"></ol>
             </div>
             <hr class="my-5" />
             <div>
-                
-                <p class="text-xl font-medium">Total price: <span id="total-price">0</span> tk</p>
-                <p class="text-xl font-medium">Discount: <span id="discount">0</span> tk</p>
-                <p class="text-xl font-medium">Total: <span id="total">0</span> tk</p>
+              <p class="text-xl font-medium">
+                Total price: <span id="total-price">0</span> tk
+              </p>
+              <p class="text-xl font-medium">
+                Discount: <span id="discount">0</span> tk
+              </p>
+              <p class="text-xl font-medium">
+                Total: <span id="total">0</span> tk
+              </p>
             </div>
             <hr class="my-5" />
-            <button class="w-full bg-[#E527B2] py-2 text-white rounded-md">Make Purchase</button>
+            
+            <div>
+                <button
+                id="purchase-btn"
+                disabled
+                  class="w-full bg-gray-300 py-2 text-black rounded-md "
+                  onclick="my_modal_1.showModal()"
+                >
+                Make Purchase
+                </button>
+                <dialog
+                  id="my_modal_1"
+                  class="modal modal-bottom sm:modal-middle"
+                >
+                  <form
+                    method="dialog"
+                    class="modal-box px-24 py-16 flex flex-col items-center"
+                  >
+                    <img class="w-40" src="./images/congo.png" alt="" />
+                    <h3 class="font-bold text-3xl mt-6">Congratulations</h3>
+                    <p class="py-4 text-center text-sm">
+                        Your Purchase the product.
+                    </p>
+                    <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button onclick="fullReset()" class="btn px-6 bg-[#E527B2] text-white hover:text-black">Go Home</button>
+                      </div>
+                    
+            </div>
           </div>
         </div>
       </section>
