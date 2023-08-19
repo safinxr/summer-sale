@@ -65,6 +65,7 @@ function fullReset() {
     couponBtn.classList='bg-[#E527B2] px-4 py-[9px] rounded-r-md text-white absolute right-0 top-0'
     discountPercentage = 0;
     coupon.removeAttribute('disabled');
+    coupon.value="";
 }
 
 document.getElementById("apply-btn").addEventListener('click', function () {
