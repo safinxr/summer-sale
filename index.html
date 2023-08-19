@@ -41,7 +41,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod1.png" alt="" />
@@ -58,7 +58,7 @@
               </div>
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod2.png" alt="" />
@@ -75,7 +75,7 @@
               </div>
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod3.png" alt="" />
@@ -100,7 +100,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod4.png" alt="" />
@@ -117,7 +117,7 @@
               </div>
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod5.png" alt="" />
@@ -135,7 +135,7 @@
               </div>
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod6.png" alt="" />
@@ -160,7 +160,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod7.png" alt="" />
@@ -178,7 +178,7 @@
               </div>
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod8.png" alt="" />
@@ -195,7 +195,7 @@
               </div>
               <div
                 onclick="handleClick(this)"
-                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95] "
+                class="shadow-lg flex flex-col items-center rounded-md p-3 bg-white transition-all duration-300 active:scale-[0.95]"
               >
                 <div class="bg-[#F8F8F8] w-full p-3 rounded-md">
                   <img class="mx-auto" src="./images/prod9.png" alt="" />
@@ -219,14 +219,34 @@
             <div class="relative w-full my-3">
               <input
                 id="coupon-input"
-                class="border-[1px] rounded-md py-2 px-2 "
+                class="border-[1px] rounded-md py-2 px-2"
                 placeholder="Coupon code"
                 type="text"
               />
-              <button class="bg-[#E527B2] px-4 py-[9px] rounded-r-md text-white absolute right-0 top-0 transition-all duration-300 active:scale-[0.95]">
+              <button
+                class="bg-[#E527B2] px-4 py-[9px] rounded-r-md text-white absolute right-0 top-0 transition-all duration-300 active:scale-[0.95]"
+              >
                 Apply
               </button>
             </div>
+          </div>
+
+          <!-- =============product lists================= -->.
+          <div class="bg-white p-4 rounded-lg">
+            <div>
+              <ol id="product-list" class="list-decimal ml-6 font-medium">
+                
+              </ol>
+            </div>
+            <hr class="my-5" />
+            <div>
+                
+                <p class="text-xl font-medium">Total price: <span id="total-price">0</span> tk</p>
+                <p class="text-xl font-medium">Discount: <span id="discount">0</span> tk</p>
+                <p class="text-xl font-medium">Total: <span id="total">0</span> tk</p>
+            </div>
+            <hr class="my-5" />
+            <button class="w-full bg-[#E527B2] py-2 text-white rounded-md">Make Purchase</button>
           </div>
         </div>
       </section>
